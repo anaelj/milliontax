@@ -9,26 +9,6 @@ import { getTaxInformation } from "./services/openai";
 import { useRateLimiter } from "./utils/rateLimiter";
 import type { CompanyInfo, TaxInfo as TaxInfoType } from "./types";
 
-// const mock = JSON.parse(
-//   `{
-//     "PIS": {
-//         "aliquota": "0,65%"
-//     },
-//     "COFINS": {
-//         "aliquota": "3,00%"
-//     },
-//     "ICMS": {
-//         "aliquota": "17%"
-//     },
-//     "CFOP": "5101",
-//     "CEST": "17.014.00",
-//     "IPI": {
-//         "aliquota": "0%"
-//     },
-//     "NCM": "8525.80.00"
-// }`.toLowerCase()
-// );
-
 function App() {
   const [companyInfo, setCompanyInfo] = useLocalStorage<CompanyInfo>(
     "companyInfo",
