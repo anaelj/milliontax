@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const RATE_LIMIT_WINDOW = 60000; // 1 minute in milliseconds
-const MAX_REQUESTS = 1; // Maximum requests per minute
+const MAX_REQUESTS = 6; // Maximum requests per minute
 
 interface RequestLog {
   timestamp: number;
