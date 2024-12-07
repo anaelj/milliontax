@@ -5,8 +5,7 @@ import { retry } from "../utils/retry";
 import toast from "react-hot-toast";
 
 const openai = new OpenAI({
-  apiKey:
-    "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",
+  apiKey: "",
   dangerouslyAllowBrowser: true,
 });
 
